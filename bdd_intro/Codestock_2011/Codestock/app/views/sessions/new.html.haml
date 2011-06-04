@@ -1,0 +1,11 @@
+%h1 Sign In
+
+= flash[:error]
+- @user.errors.full_messages.each do |msg|
+  %span= msg
+
+= semantic_form_for @user, :url => sessions_path do |form|
+  = form.input :email, :label => "Email Address"
+  = form.input :password
+
+  = form.commit_button "Sign In"

@@ -1,0 +1,28 @@
+source 'http://rubygems.org'
+
+gem 'rails', '3.0.1'
+gem 'rake', '0.8.7'
+
+gem 'haml'
+gem 'formtastic'
+
+gem 'warden'
+gem 'rails_warden'
+
+gem 'sqlite3-ruby', :require => 'sqlite3'
+
+group :test do
+  gem 'rspec-rails', '2.5.0'
+end
+
+group :cucumber do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber', '0.9.3'
+  gem 'rspec-rails', '2.5.0'
+  gem 'pickle'
+  gem 'spork'
+  gem 'launchy'
+  gem 'gherkin', '2.2.9'
+end
